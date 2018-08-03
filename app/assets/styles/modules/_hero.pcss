@@ -8,7 +8,7 @@
 				overflow: hidden;
 
 				.hero-image {
-					background-color: #000;
+					background-color: $color-black;
 					position: absolute;
 					z-index: -1;
 					top: 0;
@@ -22,18 +22,22 @@
 					}
 
 					.item-bg {
-						background-image: url('../../assets/images/summer2018-hero-xs.jpg');
+						background-image: url('//assetlibs.kaplaninternational.com/_assets/back-to-school-2018/images/bts2018-hero-xs.jpg');
+						@mixin xs-max {
+							background-size: auto 120%;
+							background-position: center bottom;
+						}
 						@mixin sm-min {
-							background-image: url('../../assets/images/summer2018-hero-sm.jpg');
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/back-to-school-2018/images/bts2018-hero-sm.jpg');
 						}
 						@mixin md-min {
-							background-image: url('../../assets/images/summer2018-hero-md.jpg');
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/back-to-school-2018/images/bts2018-hero-md.jpg');
 						}
 						@mixin lg-min {
-							background-image: url('../../assets/images/summer2018-hero-lg.jpg');
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/back-to-school-2018/images/bts2018-hero-lg.jpg');
 						}
 						@mixin all-Retina {
-							background-image: url('../../assets/images/summer2018-hero@2x.jpg');
+							background-image: url('//assetlibs.kaplaninternational.com/_assets/back-to-school-2018/images/bts2018-hero@2x.jpg');
 						}
 					}
 				}
@@ -41,9 +45,9 @@
 				.hero-text {
 					color: $color-white;
 					background-size: 100% 100%;
-					background: -moz-linear-gradient(top,  rgba(193,138,36,0) 0%, rgba(193,138,36,0) 50%, rgba(193,138,36,0.75) 100%);
-					background: -webkit-linear-gradient(top,  rgba(193,138,36,0) 0%,rgba(193,138,36,0) 50%,rgba(193,138,36,0.75) 100%);
-					background: linear-gradient(to bottom,  rgba(193,138,36,0) 0%,rgba(193,138,36,0) 50%,rgba(193,138,36,0.75) 100%);
+					background: -moz-linear-gradient(top,  rgba(50, 36, 18, 0) 0%, rgba(50, 36, 18, 0) 50%, rgba(50, 36, 18, 0.75) 100%);
+					background: -webkit-linear-gradient(top,  rgba(50, 36, 18, 0) 0%,rgba(50, 36, 18, 0) 50%,rgba(50, 36, 18, 0.75) 100%);
+					background: linear-gradient(to bottom,  rgba(50, 36, 18, 0) 0%,rgba(50, 36, 18, 0) 50%,rgba(50, 36, 18, 0.75) 100%);
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00c18a24', endColorstr='#bfc18a24',GradientType=0 );
 
 
@@ -79,9 +83,8 @@
 								display: inline-block;
 								line-height: $line-height-nospace;
 								color: $color-grey-c;
-								text-transform: uppercase;
-								font-weight: $font-weight-black;
-								text-shadow: 0px -2px 16px rgba(193, 138, 36, 0.95);
+								text-shadow: 0px -2px 16px rgba(131, 120, 112, 0.5);
+								text-decoration: none;
 
 								span {
 									display: block;
@@ -90,34 +93,42 @@
 								.title {
 									font-size: 42px;
 									letter-spacing: -0.02em;
-									padding-bottom: 0.1em;
+									margin-bottom: 0.25em;
+									font-weight: $font-weight-black;
+									text-transform: uppercase;
+									text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.25);
 
 									@mixin sm-min {
-										font-size: 60px;
+										font-size: 50px;
+										margin-bottom: 0.5em;
 										letter-spacing: -0.02em;
 									}
 									@mixin md-min {
-										font-size: 86px;
+										font-size: 72px;
+										margin-bottom: 0.4em;
 										letter-spacing: -0.03em;
 									}
 									@mixin lg-min {
-										font-size: 102px;
+										font-size: 86px;
 										letter-spacing: -0.04em;
 									}
 								}
 
 								.strapline {
 									padding: 0;
-									font-size: 16px;
+									font-size: 18px;
+									font-weight: $font-weight-bold;
 									line-height: $line-height-narrow;
+									text-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+
 									@mixin sm-min {
-										font-size: 18px;
+										font-size: 20px;
 									}
 									@mixin md-min {
-										font-size: 24px;
+										font-size: 28px;
 									}
 									@mixin lg-min {
-										font-size: 28px;
+										font-size: 36px;
 									}
 								}
 							}

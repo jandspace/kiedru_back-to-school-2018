@@ -1,0 +1,85 @@
+.field-item {
+	.section--guaranteed {
+		background-color: $color-primary;
+		background-image: url('//assetlibs.kaplaninternational.com/_assets/back-to-school-2018/images/bts2018-guaranteed-progress-lg.jpg');
+		background-position: right bottom;
+		
+		@mixin sm-min {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/back-to-school-2018/images/bts2018-guaranteed-progress-lg.jpg');
+			background-position: center;
+		}
+		@mixin md-min {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/back-to-school-2018/images/bts2018-guaranteed-progress-lg.jpg');
+		}
+		@mixin lg-min {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/back-to-school-2018/images/bts2018-guaranteed-progress-lg.jpg');
+		}
+		@mixin xl-min {
+			border: 30px solid $color-white;
+		}
+		@mixin all-Retina {
+			background-image: url('//assetlibs.kaplaninternational.com/_assets/back-to-school-2018/images/bts2018-guaranteed-progress-lg@2x.jpg');
+		}
+
+		.guaranteed {
+			color: $color-white;
+
+			.section-head,
+			.section-body {
+				@mixin sm-min {
+					margin-left: 40%;
+				}
+				@mixin md-min {
+					margin-left: 38%;
+				}
+				@mixin xl-min {
+					margin-left: 32%;
+				}
+			}
+			.section-head {
+				margin-top: 3%;
+				.title,
+				.desc {
+					text-align: left;
+					color: $color-white;
+				}
+			}
+			.section-body {
+				margin-bottom: 3%;
+				ul {
+					padding-left: 20px;
+					li {
+						&:before {
+							font-family: "kie";
+							content: "\e67c";
+							color: $color-accent-yellow;
+							left: -20px;
+						}
+					}
+				}
+				p {
+					a {
+						font-size: 13px;
+						text-decoration: underline;
+						color: rgba(255,255,255,0.5);
+						&:hover {
+							color: rgba(255,255,255,1);
+						}
+					}					
+				}
+			}
+			.cta-container {
+				text-align: left;
+				margin-top: 2em;
+				.btn {
+					background-color: $color-accent-yellow;
+					color: $color-primary;
+					&:hover {
+						background-color: $color-secondary-bluegreen;
+						color: $color-white;
+					}
+				}
+			}
+		}
+	}
+}
